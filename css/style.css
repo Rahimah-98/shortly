@@ -588,8 +588,20 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.left-7 {
+  left: 1.75rem;
 }
 
 .mx-auto {
@@ -597,16 +609,16 @@ video {
   margin-right: auto;
 }
 
-.mb-44 {
-  margin-bottom: 11rem;
+.-mt-20 {
+  margin-top: -5rem;
 }
 
 .mb-24 {
   margin-bottom: 6rem;
 }
 
-.-mt-20 {
-  margin-top: -5rem;
+.mb-44 {
+  margin-bottom: 11rem;
 }
 
 .flex {
@@ -649,46 +661,10 @@ video {
   justify-content: space-between;
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-20 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(5rem * var(--tw-space-x-reverse));
   margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -697,10 +673,40 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .rounded-full {
@@ -720,14 +726,14 @@ video {
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
 .bg-darkViolet {
   --tw-bg-opacity: 1;
   background-color: hsl(257 27% 26% / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
@@ -735,20 +741,25 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-3 {
   padding: 0.75rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-8 {
@@ -761,28 +772,13 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .text-center {
   text-align: center;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-2xl {
@@ -790,18 +786,27 @@ video {
   line-height: 2rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
-.text-grayishViolet {
-  --tw-text-opacity: 1;
-  color: hsl(257 7% 63% / var(--tw-text-opacity, 1));
+.italic {
+  font-style: italic;
 }
 
-.text-white {
+.text-cyan {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: hsl(180 66% 49% / var(--tw-text-opacity, 1));
 }
 
 .text-gray-400 {
@@ -809,14 +814,24 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
+.text-grayishViolet {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 63% / var(--tw-text-opacity, 1));
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: hsl(0 87% 67% / var(--tw-text-opacity, 1));
+}
+
 .text-veryDarkViolet {
   --tw-text-opacity: 1;
   color: hsl(260 8% 14% / var(--tw-text-opacity, 1));
 }
 
-.text-cyan {
+.text-white {
   --tw-text-opacity: 1;
-  color: hsl(180 66% 49% / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .placeholder-yellow-500::-moz-placeholder {
@@ -837,10 +852,6 @@ video {
 .hover\:text-veryDarkViolet:hover {
   --tw-text-opacity: 1;
   color: hsl(260 8% 14% / var(--tw-text-opacity, 1));
-}
-
-.hover\:opacity-10:hover {
-  opacity: 0.1;
 }
 
 .hover\:opacity-70:hover {
@@ -889,12 +900,12 @@ video {
     margin-right: 0px;
   }
 
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 
   .lg\:flex {
@@ -925,11 +936,5 @@ video {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:mb-52 {
-    margin-bottom: 13rem;
   }
 }
